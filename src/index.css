@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family:"Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+.sidebar {
+  @apply w-full md:w-64 bg-gray-800 p-4 md:py-6 md:pt-24;
+}
+
+.sidebar-btn {
+  @apply block w-full text-lg p-3 bg-transparent text-left cursor-pointer transition duration-300 ease-in-out;
+}
+
+.sidebar-btn.active {
+  @apply bg-blue-700 my-4 text-white font-semibold;
+}
+
+.sidebar-btn.active:hover {
+  @apply bg-blue-600;
+}
+
+.content {
+  @apply flex-1 p-4;
+}
+
+.about-section {
+  position: relative;
+  height: 200vh; /* Makes the section scrollable */
+  background-color: black;
+  overflow: hidden;
+}
+
+.about-text {
+  position: sticky;
+  top: 20%; /* Text stays near the top */
+  font-size: 6rem;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  z-index: 10;
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth fade and movement */
+}
+
+.about-text.fade-out {
+  opacity: 0; /* Fades out the text */
+  transform: translateY(20px); /* Slight downward movement */
+}
+
+.about-text.fade-in {
+  opacity: 1; /* Fades in the text */
+  transform: translateY(0); /* Resets position */
+}
+
+.about-image-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth fade-in and scaling */
+}
+
+.about-image-container.scale-up {
+  transform: translate(-50%, -50%) scale(1.1); /* Enlarges image */
+  opacity: 1; /* Makes it fully visible */
+}
+
+.about-image-container.scale-down {
+  transform: translate(-50%, -50%) scale(0.8); /* Shrinks image */
+  opacity: 0.5; /* Partially visible */
+}
+
+.about-image {
+  width: 600px;
+  height: 800px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.scale-up {
+  transform: scale(1.2);
+  transition: transform 0.7s ease-in-out;
+}
+
+.scale-down {
+  transform: scale(1);
+  transition: transform 0.7s ease-in-out;
+}
+
+
+@keyframes popFromBottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-pop-from-bottom {
+  animation: popFromBottom 1s ease-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
