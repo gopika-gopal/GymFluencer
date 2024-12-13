@@ -19,7 +19,6 @@ const HeroImage = () => {
 
   return (
     <div className="h-screen bg-black relative cursor-pointer overflow-hidden">
-      {/* Overlay */}
       <div
         className="absolute inset-0 z-10"
         style={{
@@ -28,7 +27,6 @@ const HeroImage = () => {
         }}
       ></div>
 
-      {/* Background Image */}
       <div
         className="h-full w-full overflow-hidden"
         style={{

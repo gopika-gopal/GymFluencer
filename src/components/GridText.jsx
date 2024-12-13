@@ -9,7 +9,6 @@ const GridText = () => {
     Achieve your fitness goals with personalized guidance and support.
   </p>
 </div>
-
       </section>
 
       <section className="py-6">
