@@ -18,8 +18,11 @@ const GymEquipment = () => {
         <>
             <div className="container mx-auto py-8 px-4 bg-black cursor-pointer">
                 <div className="bg-black text-white flex justify-center items-center h-64">
-                    <h1 className="text-7xl text-gray-200 font-bold uppercase mt-30">TRAINING EQUIPMENT</h1>
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-gray-200 font-bold uppercase mt-8 sm:mt-12 md:mt-16">
+                        Training Equipment
+                    </h1>
                 </div>
+
                 <div>
                     <p className="text-xl text-gray-500 font-bold mt-0 flex justify-center items-center">Best ones at affordable price. Shop now</p>
                 </div>

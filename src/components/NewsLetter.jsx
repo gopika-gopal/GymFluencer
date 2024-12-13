@@ -41,9 +41,7 @@ const NewsLetter = () => {
           REACH YOUR BODY GOALS IN NO TIME, CONTACT US
         </p>
         <p className="text-gray-500 text-lg tracking-widest leading-loose text-left">
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using distribution of letters, as opposed to using.
+        Elevate your fitness journey with state-of-the-art equipment, expert guidance, and personalized training routines designed to help you achieve your health and wellness goals. Embrace a lifestyle of strength, endurance, and vitality
         </p>
       </div>
     </div>

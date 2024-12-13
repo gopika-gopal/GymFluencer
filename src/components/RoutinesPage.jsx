@@ -32,8 +32,11 @@ const RoutineSection = () => {
   return (
     <section className="w-full cursor-pointer">
       <div className="bg-gradient-to-b from-gray-700 via-gray-900 to-black text-white flex justify-center items-center h-64">
-        <h1 className="text-7xl text-gray-200 font-bold uppercase">Routine</h1>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-gray-200 font-bold uppercase">
+          Routine
+        </h1>
       </div>
+
 
       <div className="bg-black text-white py-16 px-8 pb-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
