@@ -32,11 +32,11 @@ const RoutineSection = () => {
   return (
     <section className="w-full cursor-pointer">
       <div className="bg-gradient-to-b from-gray-700 via-gray-900 to-black text-white flex justify-center items-center h-64">
-        <h1 className="text-7xl font-bold uppercase mt-30">Routine</h1>
+        <h1 className="text-7xl text-gray-200 font-bold uppercase">Routine</h1>
       </div>
 
       <div className="bg-black text-white py-16 px-8 pb-20">
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
           {routines.map((routine, index) => (
             <div
               key={index}
@@ -45,8 +45,8 @@ const RoutineSection = () => {
               <div className="w-60 h-60 bg-gray-700 rounded-full overflow-hidden transform transition-transform duration-300 group-hover:scale-105 group-hover:shadow-lg">
                 <img
                   src={routine.image}
-                  alt={routine.title}
-                  className="w-full h-full object-cover"
+                  alt={`Image showing the ${routine.title} routine`}
+                  className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"
                 />
               </div>
               <h2 className="text-lg font-semibold uppercase">{routine.title}</h2>

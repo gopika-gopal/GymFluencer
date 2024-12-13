@@ -18,16 +18,19 @@ const HeroImage = () => {
   }, []);
 
   return (
-    <div className="h-screen bg-black overflow-hidden relative cursor-pointer">
+    <div className="h-screen bg-black relative cursor-pointer overflow-hidden">
+      {/* Overlay */}
       <div
         className="absolute inset-0 z-10"
         style={{
-          background: "linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3))",
+          background:
+            "linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3))",
         }}
       ></div>
 
+      {/* Background Image */}
       <div
-        className="h-full w-full overflow-hidden relative"
+        className="h-full w-full overflow-hidden"
         style={{
           transform: `scale(${scale})`,
           transformOrigin: "center",
@@ -41,7 +44,6 @@ const HeroImage = () => {
         />
       </div>
     </div>
-
   );
 };
 

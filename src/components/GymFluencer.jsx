@@ -34,7 +34,7 @@ const GymfluencerText = () => {
     );
 
     const element = document.getElementById("gymfluencer-text");
-    observer.observe(element);
+    if (element) observer.observe(element);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -43,17 +43,16 @@ const GymfluencerText = () => {
   }, [scrollingUp]);
 
   return (
-    <section className="bg-black text-white flex justify-center items-center py-7 border-t-2 border-gray-700 pt-20 cursor-pointer">
-    <div
-      id="gymfluencer-text"
-      className={`text-6xl sm:text-8xl lg:text-9xl font-bold uppercase tracking-wide text-center transform transition-all ${animationSpeed} ${
-        inView ? "animate-pop-from-bottom" : ""
-      }`}
-    >
-      GYMFLUENCER
-    </div>
-  </section>
-  
+    <section className="bg-black text-gray-400 flex justify-center items-center py-10 border-t-2 border-gray-700 cursor-pointer">
+      <div
+        id="gymfluencer-text"
+        className={`text-4xl sm:text-6xl lg:text-8xl xl:text-9xl font-serif uppercase tracking-wide text-center transform transition-all ${animationSpeed} ${
+          inView ? "animate-pop-from-bottom" : ""
+        }`}
+      >
+        GYMFLUENCER
+      </div>
+    </section>
   );
 };
 
